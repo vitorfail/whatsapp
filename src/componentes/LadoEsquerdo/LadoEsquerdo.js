@@ -3,8 +3,11 @@ import { DonutLarge } from '@material-ui/icons'
 import { Chat } from '@material-ui/icons'
 import { MoreVert } from '@material-ui/icons'
 import { Search } from '@material-ui/icons'
+import React, {useState, useEffect} from 'react'
+import ChatItem from '../ChatItem/ChatItem'
 
 export default function LadoEsquerdo(){
+    const [chat, setchat] = useState([{}, {}, {}])
     return(
         <div className='lado-esquerdo'>
             <header>
@@ -28,7 +31,9 @@ export default function LadoEsquerdo(){
                 </div>
             </div>
             <div className='chatlist'>
-
+                {chat.map((item, index) => (
+                    <ChatItem key={index}></ChatItem>
+                ))}
             </div>
         </div>
     )
