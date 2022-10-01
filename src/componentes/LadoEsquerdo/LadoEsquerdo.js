@@ -27,7 +27,7 @@ export default function LadoEsquerdo(){
             <div className='busca'>
                 <div className='input'>
                     <Search style={{color:"#919191"}} fontSize='small'></Search>
-                    <input type='search' pleaceholder='Procurar uma nova conversa'></input>
+                    <input type='search' placeholder='Procurar uma nova conversa'></input>
                 </div>
             </div>
             <div className='chatlist'>
